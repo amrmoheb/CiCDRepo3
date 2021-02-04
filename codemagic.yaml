@@ -11,8 +11,11 @@ workflows:
             xcode: latest
             cocoapods: default
         scripts: 
-    --xcode-project CICD2 \
-        --scheme CICD2 \
+  - name: iOS test
+    script: |
+    xcode-project run-tests \
+        --workspace MyAwesomeApp.xcworkspace \
+        --scheme MyAwesomeApp \
         --device "iPhone 11"
     test_report: build/ios/test/*.xml
         
