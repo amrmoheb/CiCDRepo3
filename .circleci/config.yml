@@ -4,6 +4,17 @@
 version: 2.1
 
 jobs:
+  build-and-test:
+    macos:
+      xcode: 11.3.0
+    steps:
+      ...
+      - run:
+          name: Run tests
+          command: fastlane scan
+          environment:
+            SCAN_DEVICE: iPhone 6
+            SCAN_SCHEME: WebTests
   build:
 
     macos:
