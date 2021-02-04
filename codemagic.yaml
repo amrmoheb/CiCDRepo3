@@ -10,7 +10,7 @@ workflows:
                 XCODE_SCHEME: "{{ ADD SCHEME NAME HERE }}"
             xcode: latest
             cocoapods: default
-        scripts:|
+        scripts:
     xcode-project run-tests \
         --project "CICD2.xcodeproj" \
         --scheme CICD2 \
