@@ -10,7 +10,7 @@ workflows:
                 XCODE_SCHEME: "{{ ADD SCHEME NAME HERE }}"
             xcode: latest
             cocoapods: default
-        scripts: |
+        scripts: 
     --xcode-project CICD2 \
         --scheme CICD2 \
         --device "iPhone 11"
